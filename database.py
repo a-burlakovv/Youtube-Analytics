@@ -1,8 +1,11 @@
+# database.py
 import sqlite3
-# Убедимся, что импортированы нужные классы
 from datetime import datetime, date, timezone
+# Импортируем загрузчик конфигурации
+import config_loader as app_config
 
-DB_NAME = 'youtube_analytics.db'
+# Используем имя БД из конфигурации
+DB_NAME = app_config.DATABASE_NAME
 
 def connect_db():
     """Устанавливает соединение с базой данных SQLite."""
