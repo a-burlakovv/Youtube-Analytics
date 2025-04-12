@@ -1,0 +1,32 @@
+# Исключаем файл конфигурации с ключами API
+config.ini
+
+# Исключаем базу данных SQLite (если она у вас в корне)
+youtube_analytics.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Стандартные исключения для Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Исключаем папки виртуальных окружений (если используете)
+venv/
+.venv/
+env/
+.env
+
+# Исключаем файлы IDE (примеры для VS Code и PyCharm)
+.vscode/
+.idea/
+
+# Исключаем системные файлы Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Другие возможные файлы (например, логи, если будут)
+*.log
